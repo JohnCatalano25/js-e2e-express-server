@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: Default
+  demands:
+  - agent.name -equals agentTest2025jc
 
 steps:
 - task: NodeTool@0
